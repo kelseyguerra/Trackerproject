@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Tracker Suggester</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Which Epicodus Path Suits <strong>YOU</strong>?</h1>
+
+    <form id="tracker">
+      <div class="form-group">
+        <legend>I'm more interested in:</legend>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="frontback" value="1" checked>
+          <label class="form-check-label" for="front">Front-end Development</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="frontback" value="2" checked>
+          <label class="form-check-label" for="back">Back-end Development</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="frontback" value="3" checked>
+          <label class="form-check-label" for="no">Neither</label>
+        </div>
+      </div>
+
+        <div class="form-group">
+          <legend>Do you consider yourself to be more:</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="trait" value="1" checked>
+            <label class="form-check-label" for="logical">Logical</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="trait" value="2" checked>
+            <label class="form-check-label" for="creative">Creative</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="trait" value="3" checked>
+            <label class="form-check-label" for="no">Neither</label>
+          </div>
+        </div>
+
+          <div class="form-group">
+            <legend>Choose an activity:</legend>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="brain" value="1" checked>
+              <label class="form-check-label" for="math">Math</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="brain" value="2" checked>
+              <label class="form-check-label" for="writing">Writing</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="brain" value="3" checked>
+              <label class="form-check-label" for="drawing">Painting</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="brain" value="4" checked>
+              <label class="form-check-label" for="puzzle">Puzzles</label>
+            </div>
+          </div>
+
+            <div class="form-group">
+              <legend>Which of these statements do you find to be the most accurate?:</legend>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="truth" value="1" checked>
+                <label class="form-check-label" for="code">There's nothing more satisfying than writing a solid code that runs seamlessly. I'll spend all night if I have to.</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="truth" value="2" checked>
+                <label class="form-check-label" for="css">There's nothing more satisfying than adding CSS styles to a written code. It's gotta look good! </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="truth" value="3" checked>
+                <label class="form-check-label" for="nothanks">I don't remember signing up for coding classes. I must've been drunk.</label>
+              </div>
+            </div>
+
+              <div class="form-group">
+                <legend>Which of these interests you the most?:</legend>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="interests" value="1" checked>
+                  <label class="form-check-label" for="design">Responsive design</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="interests" value="2" checked>
+                  <label class="form-check-label" for="security">Cyber security</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="interests" value="3" checked>
+                  <label class="form-check-label" for="neither"> Interactive applications</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="interests" value="4" checked>
+                  <label class="form-check-label" for="neither">How did I get here?</label>
+                </div>
+              </div>
+
+                <button type="submit" class="btn btn-info">Go!</button>
+              </form>
+
+                <div id="output">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
