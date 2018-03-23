@@ -9,12 +9,12 @@ $(document).ready(function() {
     var score = frontback + brain + truth + interests;
 
     $("#output").show();
-    if (score <=3) {
-      $("#harry").show();
-    } else if (score <=6) {
-      $("#ron").show();
+    if (score <=7) {
+      $("#css").show();
+    } else if (score <=10) {
+      $("#php").show();
     } else {
-      $("#hermione").show();
+      $("#dunzo").show();
     }
 
     $("form#tracker").hide();
