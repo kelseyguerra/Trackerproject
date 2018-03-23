@@ -1,3 +1,48 @@
 #css, #php, #dunzo {
   display: none;
+  text-align: center;
+  background-color: #00a39e;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  font-family: serif;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;]
+}
+img {
+  max-width: 500px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+.container {
+  margin-top: -100px;
+  background-color: #00a39e;
+  max-width: 700px;
+  margin-bottom: 120px;
+  padding: 15px;
+}
+legend {
+  font-family: monospace;
+  color: black;
+  font-weight: 500;
+}
+.form-check-label{
+  color: white;
+  font-family: monospace;
+}
+.container-header img {
+  margin-left: 120px;
+  margin-top: 10px;
+  max-width: 300px;
+}
+body {
+  background-color: silver;
 }
