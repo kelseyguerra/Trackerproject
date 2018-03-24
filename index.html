@@ -8,54 +8,54 @@
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
-<style>
-body {
- font-family: 'Nova Flat';
-}
-</style>
+  <style>
+    body {
+      font-family: 'Nova Flat';
+    }
+  </style>
   <title>Tracker Suggester</title>
 </head>
 
 <body>
   <div class="container-header">
-  <img src="img/epicodus.png" alt="epi">
-</div>
+    <img src="img/epicodus.png" alt="epi">
+  </div>
   <div class="container">
     <h1>which coding path suits you best?</h1>
     <form id="tracker">
       <div class="form-group">
-  <label for="name"><strong>Enter your name:</strong></label>
-    <input id="name" class="form-control" type="text">
-  </div>
+        <label for="name"><strong>Enter your full name:</strong></label>
+        <input id="name" class="form-control" type="text">
+      </div>
       <div class="form-group">
-        <legend>I'm more interested in:</legend>
+        <legend>What is your favorite food?:</legend>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="frontback" value="2" checked>
-          <label class="form-check-label" for="front">Front-end Development</label>
+          <input class="form-check-input" type="radio" name="food" value="2" checked>
+          <label class="form-check-label" for="sushi">Sushi</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="frontback" value="4" checked>
-          <label class="form-check-label" for="back">Back-end Development</label>
+          <input class="form-check-input" type="radio" name="food" value="6" checked>
+          <label class="form-check-label" for="whatever">Anything quick and efficient. I'm easy.</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="frontback" value="6" checked>
-          <label class="form-check-label" for="no">Neither</label>
+          <input class="form-check-input" type="radio" name="food" value="8" checked>
+          <label class="form-check-label" for="no">Tide Pods</label>
         </div>
       </div>
 
       <div class="form-group">
         <legend>Do you consider yourself to be more:</legend>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="trait" value="2" checked>
+          <input class="form-check-input" type="radio" name="trait" value="6" checked>
           <label class="form-check-label" for="logical">Logical</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="trait" value="4" checked>
+          <input class="form-check-input" type="radio" name="trait" value="2" checked>
           <label class="form-check-label" for="creative">Creative</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="trait" value="6" checked>
-          <label class="form-check-label" for="no">Neither</label>
+          <input class="form-check-input" type="radio" name="trait" value="8" checked>
+          <label class="form-check-label" for="no">Bored</label>
         </div>
       </div>
 
@@ -66,15 +66,14 @@ body {
           <label class="form-check-label" for="painting">Painting</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="brain" value="4" checked>
+          <input class="form-check-input" type="radio" name="brain" value="6" checked>
           <label class="form-check-label" for="painting">Solving Puzzles</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="brain" value="6" checked>
-          <label class="form-check-label" for="puzzle">Uhh... Sleeping?</label>
+          <input class="form-check-input" type="radio" name="brain" value="8" checked>
+          <label class="form-check-label" for="committing">Not committing to anything</label>
         </div>
       </div>
-
       <div class="form-group">
         <legend>Which of these statements do you find to be the most accurate?:</legend>
         <div class="form-check form-check-inline">
@@ -82,11 +81,11 @@ body {
           <label class="form-check-label" for="css">There's nothing more satisfying than adding CSS styles to a written code. It's gotta look good! </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="truth" value="4" checked>
+          <input class="form-check-input" type="radio" name="truth" value="6" checked>
           <label class="form-check-label" for="code">There's nothing more satisfying than writing a solid code that runs seamlessly. I'll spend all night if I have to.</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="truth" value="6" checked>
+          <input class="form-check-input" type="radio" name="truth" value="8" checked>
           <label class="form-check-label" for="nothanks">I don't remember signing up for coding classes. I must've been drunk.</label>
         </div>
       </div>
@@ -98,11 +97,11 @@ body {
           <label class="form-check-label" for="design">Responsive design</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="interests" value="4" checked>
+          <input class="form-check-input" type="radio" name="interests" value="6" checked>
           <label class="form-check-label" for="security">Cyber security</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="interests" value="6" checked>
+          <input class="form-check-input" type="radio" name="interests" value="8" checked>
           <label class="form-check-label" for="neither">How did I get here?</label>
         </div>
       </div>
@@ -115,15 +114,17 @@ body {
     </div>
     <div id="css">
       <img src="img/css.jpg" alt="css">
-      <p>Hey <span class="name"></span>, you seem like more of a front- end, design focused kinda developer! You should research CSS, React, and Java script where you can learn how to create interactive and responsive designs to enhance the look of your applications and webpages!</p>
+      <p>Hey <span class="name"></span>, you seem like more of a front- end, design focused kinda developer! You should research CSS, React, and Java script where you can learn how to create interactive and responsive designs to enhance the look of your
+        applications and webpages!</p>
     </div>
     <div id="php">
       <img src="img/php.jpg" alt="c">
-      <p>Hey <span class="name"></span>, you seem like more of a back-end, kinda developer focused on more of the logistical side of things! You should research PHP, Java, and C# where you can learn the complex languages of software development and internal processing procedures!</p>
+      <p>Hey <span class="name"></span>, you seem like more of a back-end, kinda developer focused on more of the logistical side of things! You should research PHP, Java, and C# where you can learn the complex languages of software development and internal
+        processing procedures!</p>
     </div>
     <div id="dunzo">
-      <img src ="img/warning.png" alt="dunzo">
-      <p>Hey <span class="name"></span>, are you alright?<br> I think you should maybe look into choosing another career path that suits you better. <em>However,</em> if you're still interested in learning about coding, please take a look at <a href="https://www.epicodus.com">Epicodus</a> and their hands-on learning curriculum!</p>
+      <img src="img/warning.png" alt="dunzo">
+      <p>Hey <span class="name"></span>, are you alright?<br> I think you should maybe look into choosing another career path that suits you better. <em>However,</em> if you're still interested in learning about coding, please take a look at <a href="https://www.epicodus.com">Epicodus</a>        and their hands-on learning curriculum!</p>
     </div>
 
   </div>
