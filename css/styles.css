@@ -1,15 +1,20 @@
 #css, #php, #dunzo {
   display: none;
   text-align: center;
-  background-color: #00a39e;
+  background-color: rgba(152, 210, 208, 0.75);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   padding: 50px;
-  font-family: serif;
+  font-family:'Nova Flat';
   color: white;
   font-weight: 500;
-  font-size: 25px;]
+  font-size: 18px;
+  border: 12px, black;
+  border-style: groove;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0.51);
 }
 img {
   max-width: 500px;
@@ -18,25 +23,42 @@ img {
 }
 
 h1 {
+  font-family: 'Nova Flat';
   text-align: center;
-  font-family: monospace;
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 40px;
+  font-variant: small-caps;
+  background-color: rgba(255, 255, 255, 0.30);
+  border-radius: 30px;
+  max-width: 700px;
+  border-style: groove;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.51);
+text-shadow: 2px 2px 8px white;
 }
 .container {
-  margin-top: -100px;
-  background-color: #00a39e;
+  margin-top: -75px;
+  background-color: rgba(0, 163, 158, 0.70);
   max-width: 700px;
   margin-bottom: 120px;
   padding: 15px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.51);
+  border-radius: 16px;
 }
 legend {
-  font-family: monospace;
+  font-family:'Nova Flat';
   color: black;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 16px;
 }
 .form-check-label{
   color: white;
-  font-family: monospace;
+  font-family: arial;
+  font-size: 13px;
 }
 .container-header img {
   margin-left: 120px;
@@ -44,5 +66,9 @@ legend {
   max-width: 300px;
 }
 body {
-  background-color: silver;
+  background-color: rgba(255, 255, 255, 0.81);
+}
+#name {
+  max-width: 200px;
+  border-style: groove, 20px;
 }
